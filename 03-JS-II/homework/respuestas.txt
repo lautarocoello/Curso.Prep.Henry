@@ -1,0 +1,25 @@
+for : El for es un bucle que debe estar inicializado por una variable la cual definimos asi
+for(var i= 0; i <=20; i++)
+    console.log(i);
+aca lo que le decimos al bucle es que cree una variable que sera la i, hasta que i sea menor o igual
+a 20 vaya iterando de uno en uno (con el i++) y que los muestre por consola. Este bucle nos sirve
+para cuando sabemos hasta que valor queremos llegar ya que se inicializa y se termina en la 
+condicion entre parentesis.
+
+&& : Este es un operador logico, y significa "Y", lo utilizaremos sabiendo que este tipo de operador
+si no cumple las dos condiciones o las que tenga declaradas para comparar, nos dara como resultado
+false, por ejemplo, si ponemos
+if (a && b === 0);
+las variables a y b tendran que valer cero, sino 
+el if no se ejecutara.
+
+||: Este tambien es un operador logico, y a diferencia del && cuando una de las condiciones comparadas
+sea verdadera, el resultado sera true
+if (a || b === 0);
+en este caso si "a" vale 10 y "b" vale 0, ejecutara lo que declaremos en el if porque ya una variable
+cumplio la condicion y continuara.
+
+! : Este operador es de negacion, siempre que lo usemos tenemos que saber que el resultado a este
+sera dependiendo la situacion en lo que lo usemos
+if (a || b !== 0);
+en este caso cuando "a" o "b" NO valgan 0, SEAN DISTINTAS DE, ejecutara el if.

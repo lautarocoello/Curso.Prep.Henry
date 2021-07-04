@@ -1,0 +1,55 @@
+Variables= Las variables son como "cajas" a las cuales les damos un nombre para luego almacenar
+algo dentro de ella, se declaran con la palabra reservada "var" y con el simbolo "=" se le da 
+una asignacion, luego de darle el nombre a la variable que generalmente es referente de lo que 
+almacenara, las variables en js se pueden pisar, por ejemplo si declaramos una variable en 
+un principio como var numero = 2; y luego declaramos que numero = numero + 2, el interprete pondra en
+la variable el numero que tiene almacenado + la nueva cifra que se le esta indicando. Para que no se
+pisen estas variables se debe usar const, la cual es otra forma de variable, esta es constante
+y el valor que toma desde que se la declara es el que seguira teniendo.
+
+Strings= Los strings son cadenas de caracteres, lo cuales se declaran de la
+siguiente manera: 'lo que se desea decir'; 
+
+Funciones, argumentos y return= Una funcion es una operacion determinada que se le da al interprete
+para que realicen, se declara con la palabra reservada "function", se le da el nombre luego de 
+declararla, y se abren "()", en el cual podemos declara un argumento o no, luego se abren "{}" y se 
+cierra donde queremos finalizar la tarea a realizar por esta funcion.
+Los argumentos van dentro de los "()" y podemos declarar mas de uno separandolo con una coma (,).
+Estos ocupan un rol de variable dentro de la funcion en la que se declaran, por ejemplo
+si escribimos 
+function paisOrigen (pais){
+    console.log('Mi pais es '+ pais);
+}
+
+paisOrigen('Argentina');
+por consola veremos que nos dira: Mi pais es Argentina
+
+Y en el caso de return nos permite acceder a un resultado o la respuesta que nos esta dando la funcion
+ya que por un tema de scope si queremos acceder a uno de estos dentro de una funcion nos dara 
+undefined, para poder visualizar esto debemos crear una variable fuera de la funcion para luego
+otorgarle el resultado.
+por ejemplo
+function restarDosNumeros(a, b){
+    resto= a - b;
+    return resto;
+}
+
+var diferenciaDeResta = restarDosNumeros(50, 25);
+console.log(diferenciaDeResta);
+
+Declaraciones if= Las declaraciones if se cumplen cuando el resultado que ingresamos en nuestros
+argumentos son verdaderos, caso contrario si declaramos alguna funcion que haga cuando es falso lo
+hara, sino no hara nada.
+Por ejemplo
+function esMayor(edad){
+    if (edad > 18){
+        return true;
+    }
+    else return false;
+}
+
+esMayor(15); // false
+
+Los valores booleanos pueden ser de dos tipos, true o false, y los utilizamos para definir si lo
+que se vaya a comparar con este valor es falso o verdadero, dependiendo para que lo usemos, como en 
+el ejemplo anterior.
