@@ -1,0 +1,33 @@
+Un array es como una caja en la que podemos guardar distintos tipos de elementos ya sean string,
+numeros, variables booleanas.. estos se declaran de la siguiente manera:
+var nombreDelArray = [];
+entre los corchetes podemos darle ya valores a los elementos del arreglo, o dejarlo vacio para ir
+llenandolo mas adelante.
+
+var nombreDelArray = ['Juan', 'Pedro, 1, 2, 3];
+en este ejemplo tenemos un array con 5 elementos, a los cuales podemos acceder llamando a su posicion
+tenemos que tener en claro que en programacion la posicion 0 esta considerado, asi que este array
+que vemos aca tiene 5 elementos que se encuentran en las posiciones:
+0 = Juan
+1 = Pedro
+2 = 1
+3 = 2
+4 = 3
+
+Los elementos de los arrays se pueden superponer, por ejemplo si en vez de poner a Juan en la posicion
+0 necesitamos sacarlo y poner a Alfredo lo hacemos asi
+nombreDelArray[0]= "Alfredo";
+si llamamos a la posicion nombreDelArray = [2];
+nos dara como resultado = 1
+
+Tambien tenemos distintas formas de recorrer un array, con bucles por ejemplo para que vaya ingresando
+a cada posicion y luego hacer con éste lo que necesitemos, ademas podemos eliminar un ultimo elemento
+con nombreDelArray.pop, añadir un elemento al final con nombreDelArray.push, eliminar el primer
+elemento del arreglo con nombreDelArray.shift o añadir en la primer posicion con 
+nombreDelArray.unshift
+Otra funcionalidad que tienen los arrays es el .length que nos devuelve el la cantidad de elementos
+que hay en el arreglo, tenemos que saber que queremos usarlo para acceder al ultimo elemento del array
+tenemos que poner nombreDelArray.length-1, ya que sino éste, siguiendo el caso del array de arriba
+nos diria que tiene 5 elementos, pero la posicion 5 no esta definida, para manipular el elemento
+le restamos uno y ahi si accedemos al QUINTO elemento que esta en la CUARTA posicion (recordemos que el
+0 es contado como primer lugar)
