@@ -1,0 +1,57 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si 
+se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Objetos
+Propiedades
+Métodos
+Bucle for…in
+Notación de puntos vs notación de corchetes
+
+Las notaciones de puntos son para acceder a distintas propiedades del objeto siguiendo su recorrido
+de escritura.
+En cambio con la notacion de corchetes podemos acceder a una propiedad del objeto guardada
+en alguna variable fuera del mismo y acceder mas facil a ella.
+
+Los objetos son como si fueran unas cajas contenedoras de propiedades las cuales a su vez tienen metodos funcionales para hacer determinada clase
+de cosas, segun lo que les indiquemos, se declaran asi
+
+Las propiedades son los elementos de los objetos que nos permiten trabajarlos, pueden contener arrays, booleanos, strings, otros objetos.
+Tambien pueden contener metodos que definen las operaciones de las propiedades.
+
+El bucle for in nos permite poder acceder a las casillas de los objetos al igual que el for en 
+los arrays, pero como los arrays sus posiciones son numeradas, podemos acceder con una variable inciada
+en 0 e iterando hasta que termine el array.
+En cambio con los objetos las casillas numeradas son las propiedades
+Ejemplo
+var pelotas= {
+    verde: 40,
+    amarilla: 10,
+    rojas: 20,
+    azules: 30,  
+}
+var totalPelotas= 0 ;
+
+for (colores in pelotas){
+    console.log(colores); //Nos mostrara por consola todos los colores que hay en "pelotas"
+    //pero supongamos que ahora queremos sumar todas esas pelotas
+    totalPelotas += pelotas[colores];
+}
+    //y mostrar el resultado por consola;
+    console.log(totalPelotas);  //Nos mostrara 100
+
+
+var objetoDeclarado {
+    propiedad: valor,        <--- las propiedades en los objetos se separan con comas, no punto y coma
+    prop2:[ 
+        subObjeto{           <--- pueden tener arreglos y dentro de los arreglos otros objetos
+        
+    }]                 
+}
+
+Para acceder a los objetos los invocamos con el nombre seguido de que parte queremos acceder, puede ser de dos maneras
+
+objetoDeclarado.propiedad           Este se utilza cuando la propiedad es LITERAL y accedemos a ella directamente porque esta declarada
+                                    dentro del objeto
+
+objetoDeclarado[prop2]          Este tambien es utilizado y nos permite ingresar al objeto
+
