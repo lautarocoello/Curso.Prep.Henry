@@ -1,0 +1,12 @@
+Una clase es una agrupacion de cosas similares en las cuales queremos guardar informacion que es
+similar pero con distintas caracteristicas, las clases se invocan con la primer letra del nombre
+que le daremos con Mayuscula, seguida de () en la cual podemos declarar argumentos, o no, dependiendo
+la necesidad que tengamos. Estas nos sirven para agrupar varios datos y funciones similares que
+utilizaremos por ejemplo en un registro de usuarios de una pagina
+Tenemos que saber que una vez declarada la clase podemos darle valor a los argumentos
+llamando a la clase con la palabra reservada "new" + "NombreClase (argumento1, argumento2, argumento3)
+
+Los prototipos (su palabra reservada es "prototype"), son una forma de acceder a un metodo con
+distintos objetos, es una forma de "achicar" el codigo para no ocupar espacio de la memoria
+en vano, siendo que con este forma definimos una vez un metodo y los objetos acceden a el
+invocandolo con "nombreDeObjeto".prototype
