@@ -1,0 +1,4 @@
+Las funciones callback son las funciones que invocamos en los argumentos de otras funciones para que realice
+la operacion programada en dicha funcion, al ser dinamico, podemos invocar una funcion que ya teniamos declarada realizando una funcionalidad
+y queremos volver a que esa funcion la podamos usar en otr funcion, simplemente creamos la nueva funcion y en sus argumentos invocamos el nombre
+de la funcion, pero sin los (), solo el nombre de la funcion.
